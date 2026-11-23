@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escova Secadora Rotativa e Modeladora 3 em 1 Íons Tourmaline - Oferta Relâmpago</title>
+    <title>Escova Secadora e Alisadora 3 em 1 Profissional 1500W Bivolt Automático, Íons Negativos - Shopee Brasil</title>
     <!-- Carregando Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Carregando Fonte Inter -->
@@ -37,29 +37,28 @@
         }
     </script>
     <style>
-        /* Estilos customizados para detalhes visuais fiéis à Shopee */
         body {
             background-color: #F5F5F5;
             color: #222222;
             overflow-x: hidden;
         }
         
-        /* Animação sutil de pulso no botão principal de compra */
+        /* Animação sutil de destaque no botão principal de compra */
         @keyframes pulse-shopee {
             0%, 100% {
                 transform: scale(1);
-                box-shadow: 0 4px 14px 0 rgba(238, 77, 45, 0.39);
+                box-shadow: 0 4px 14px 0 rgba(238, 77, 45, 0.35);
             }
             50% {
-                transform: scale(1.02);
-                box-shadow: 0 6px 20px rgba(238, 77, 45, 0.55);
+                transform: scale(1.012);
+                box-shadow: 0 6px 20px rgba(238, 77, 45, 0.52);
             }
         }
         .btn-shopee-pulse {
-            animation: pulse-shopee 2.2s infinite;
+            animation: pulse-shopee 2.3s infinite;
         }
 
-        /* Esconder barra de rolagem nas miniaturas mantendo funcionalidade */
+        /* Ocultar barra de rolagem horizontal em miniaturas e filtros */
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
@@ -67,450 +66,555 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
-
-        /* Estilo da barra de progresso Oferta Relâmpago */
-        .flash-progress-bg {
-            background: #FFB6A3;
-            position: relative;
-            overflow: hidden;
-        }
-        .flash-progress-fill {
-            background: linear-gradient(90deg, #EE4D2D 0%, #FF7337 100%);
-        }
     </style>
 </head>
-<body class="antialiased pb-20 md:pb-8">
+<body class="antialiased pb-20 md:pb-12">
 
-    <!-- =====================================================================
-         CONFIGURAÇÃO DO SEU LINK DE AFILIADO SHOPEE
-         Instrução: Substitua o link abaixo dentro da tag <script> no final do arquivo
-         ou use o botão de teste rápido neste painel discreto (que o visitante pode fechar).
-         ===================================================================== -->
-    <div id="affiliate-helper-bar" class="bg-slate-900 text-white text-xs py-2 px-4 flex flex-wrap items-center justify-between gap-2 border-b border-slate-700">
-        <div class="flex items-center gap-2">
-            <span class="bg-amber-500 text-slate-950 font-bold px-2 py-0.5 rounded text-[10px] uppercase">Painel do Afiliado</span>
-            <span>Configure seu link de afiliado da Shopee no código (variável <code class="text-amber-300 font-mono">LINK_AFILIADO_SHOPEE</code>) ou teste aqui:</span>
-        </div>
-        <div class="flex items-center gap-2">
-            <input type="text" id="custom-affiliate-input" placeholder="Cole seu link https://s.shopee.com.br/..." class="bg-slate-800 border border-slate-600 rounded px-2 py-1 text-xs text-white w-56 focus:outline-none focus:border-shopee-orange">
-            <button onclick="updateAffiliateLinkFromBar()" class="bg-shopee-orange hover:bg-shopee-orangeHover text-white font-semibold px-2.5 py-1 rounded transition">Aplicar</button>
-            <button onclick="document.getElementById('affiliate-helper-bar').remove()" class="text-slate-400 hover:text-white ml-2" title="Fechar aviso">✕</button>
-        </div>
-    </div>
-
-    <!-- 1. BARRA SUPERIOR ESTILO SHOPEE (AVISO DE CUPOM & OFERTA RELÂMPAGO) -->
+    <!-- ===================================================================== -->
+    <!-- 1. CABEÇALHO OFICIAL ESTILO SHOPEE BRASIL                              -->
+    <!-- ===================================================================== -->
     <header class="sticky top-0 z-40 shadow-sm">
-        <!-- Faixa superior laranja -->
-        <div class="bg-gradient-to-r from-[#EE4D2D] to-[#FF6633] text-white py-2 px-3">
-            <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 text-xs sm:text-sm">
+        <!-- Barra Superior de Vantagens & Cronômetro -->
+        <div class="bg-[#D0011B] sm:bg-gradient-to-r sm:from-[#EE4D2D] sm:to-[#FF6633] text-white py-1.5 px-3 border-b border-white/15">
+            <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-xs">
                 <div class="flex items-center gap-2 font-medium">
-                    <span class="bg-white text-shopee-orange font-extrabold px-1.5 py-0.5 rounded text-[11px] uppercase tracking-wider flex items-center gap-1">
-                        <i data-lucide="truck" class="w-3.5 h-3.5"></i> Frete Grátis
+                    <span class="bg-white text-shopee-orange font-extrabold px-1.5 py-0.5 rounded text-[10px] uppercase tracking-wider flex items-center gap-1">
+                        <i data-lucide="truck" class="w-3 h-3"></i> Frete Grátis
                     </span>
-                    <span>Cupom de <strong>FRETE GRÁTIS</strong> ativado para compras hoje!</span>
+                    <span>Cupom de <strong>FRETE GRÁTIS</strong> + Desconto no Pix ativados!</span>
                 </div>
                 <div class="flex items-center gap-2">
-                    <span class="uppercase font-bold tracking-wider text-yellow-200 flex items-center gap-1 text-xs">
-                        <i data-lucide="zap" class="w-3.5 h-3.5 fill-yellow-300 text-yellow-300"></i> Oferta termina em:
+                    <span class="uppercase font-bold tracking-wider text-yellow-200 flex items-center gap-1 text-[11px]">
+                        <i data-lucide="zap" class="w-3.5 h-3.5 fill-yellow-300 text-yellow-300"></i> Oferta expira em:
                     </span>
                     <div class="flex items-center gap-1 font-mono font-bold text-xs">
                         <span id="top-hours" class="bg-black/85 text-white px-1.5 py-0.5 rounded">01</span>:
-                        <span id="top-minutes" class="bg-black/85 text-white px-1.5 py-0.5 rounded">42</span>:
-                        <span id="top-seconds" class="bg-black/85 text-white px-1.5 py-0.5 rounded">19</span>
+                        <span id="top-minutes" class="bg-black/85 text-white px-1.5 py-0.5 rounded">48</span>:
+                        <span id="top-seconds" class="bg-black/85 text-white px-1.5 py-0.5 rounded">35</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Barra de Navegação / Identidade Visual Oficial -->
-        <div class="bg-white border-b border-gray-200 py-2.5 px-4">
-            <div class="max-w-6xl mx-auto flex items-center justify-between">
-                <div class="flex items-center gap-2.5">
-                    <!-- Ícone de Sacola Estilo Shopee -->
-                    <div class="w-9 h-9 rounded-lg bg-shopee-orange flex items-center justify-center text-white shadow-sm">
-                        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+        <!-- Barra Principal Laranja Shopee -->
+        <div class="bg-gradient-to-b from-[#EE4D2D] to-[#FF6533] text-white py-3 px-4">
+            <div class="max-w-6xl mx-auto flex items-center justify-between gap-3 sm:gap-6">
+                <!-- Logo Estilo Shopee -->
+                <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 shrink-0 group">
+                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white text-shopee-orange flex items-center justify-center shadow-sm group-hover:scale-105 transition">
+                        <i data-lucide="shopping-bag" class="w-5 h-5 sm:w-6 sm:h-6"></i>
                     </div>
                     <div>
                         <div class="flex items-center gap-1.5">
-                            <span class="font-extrabold text-base sm:text-lg tracking-tight text-shopee-orange">Achadinhos Beleza</span>
-                            <span class="bg-shopee-orange text-white text-[10px] font-bold px-1.5 py-0.5 rounded">Indicado</span>
+                            <span class="font-extrabold text-lg sm:text-xl tracking-tight leading-none">Shopee</span>
+                            <span class="bg-white/20 text-white text-[10px] font-bold px-1.5 py-0.5 rounded uppercase">Indicado</span>
                         </div>
-                        <p class="text-[11px] text-gray-500 hidden sm:block">Seleção Oficial • Produtos Mais Vendidos e Avaliados</p>
+                        <span class="text-[10px] text-orange-100 hidden sm:block">Oferta Verificada • Espaço Futuro</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="flex items-center gap-3">
-                    <div class="hidden md:flex items-center gap-1.5 text-xs text-gray-600 bg-gray-100 px-3 py-1.5 rounded-full">
-                        <i data-lucide="shield-check" class="w-4 h-4 text-shopee-orange"></i>
-                        <span>Compra 100% Segura via Shopee</span>
-                    </div>
-                    <a href="#comprar-agora" onclick="goToAffiliate(event)" class="bg-shopee-orange hover:bg-shopee-orangeHover text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded transition shadow-sm flex items-center gap-1.5">
-                        <span>Resgatar Oferta</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                <!-- Barra de Busca Estilizada (Clicável para o anúncio) -->
+                <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="hidden md:flex flex-1 max-w-xl bg-white rounded-sm p-1 items-center justify-between shadow-inner cursor-pointer">
+                    <span class="text-xs text-gray-600 px-3 truncate">Escova Secadora e Alisadora 3 em 1 Profissional 1500W Bivolt Automático...</span>
+                    <span class="bg-shopee-orange hover:bg-shopee-orangeHover text-white px-4 py-1.5 rounded-sm flex items-center justify-center transition">
+                        <i data-lucide="search" class="w-4 h-4"></i>
+                    </span>
+                </a>
+
+                <!-- Botão Cupom Topo -->
+                <div class="flex items-center gap-3 shrink-0">
+                    <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="bg-white text-shopee-orange hover:bg-orange-50 text-xs sm:text-sm font-extrabold px-3.5 sm:px-4 py-2 rounded shadow-sm flex items-center gap-1.5 transition">
+                        <i data-lucide="ticket" class="w-4 h-4"></i>
+                        <span>Cupom R$ 84,64</span>
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- BREADCRUMB ESTILO SHOPEE -->
-    <nav class="max-w-6xl mx-auto px-4 py-3 text-xs text-gray-500 flex items-center gap-1.5 overflow-x-auto whitespace-nowrap">
-        <span class="text-shopee-orange font-medium">Shopee</span>
-        <span>&gt;</span>
-        <span>Beleza e Cuidado Pessoal</span>
-        <span>&gt;</span>
-        <span>Cuidados com o Cabelo</span>
-        <span>&gt;</span>
-        <span class="text-gray-700 font-medium truncate">Escova Secadora Rotativa e Modeladora 3 em 1</span>
+    <!-- ===================================================================== -->
+    <!-- 2. BREADCRUMB EXATO DA SHOPEE                                         -->
+    <!-- ===================================================================== -->
+    <nav aria-label="Breadcrumb" class="max-w-6xl mx-auto px-4 py-3 text-xs text-gray-500 flex items-center gap-1.5 overflow-x-auto no-scrollbar whitespace-nowrap">
+        <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="text-[#0055AA] hover:underline">Shopee</a>
+        <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-gray-400 shrink-0"></i>
+        <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="text-[#0055AA] hover:underline">Beleza</a>
+        <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-gray-400 shrink-0"></i>
+        <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="text-[#0055AA] hover:underline">Utensílios de Beleza</a>
+        <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-gray-400 shrink-0"></i>
+        <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="text-[#0055AA] hover:underline">Utensílios Capilares</a>
+        <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-gray-400 shrink-0"></i>
+        <span class="text-gray-700 font-medium truncate">Escova Secadora e Alisadora 3 em 1 Profissional 1500W Bivolt Automático, Íons Negativos, Seca Alisa e Modela Cabelo</span>
     </nav>
 
-    <!-- 2. CARD PRINCIPAL DO PRODUTO (LAYOUT DE 2 COLUNAS) -->
+    <!-- ===================================================================== -->
+    <!-- CONTEÚDO PRINCIPAL                                                    -->
+    <!-- ===================================================================== -->
     <main class="max-w-6xl mx-auto px-2 sm:px-4 space-y-4">
-        <section class="bg-white rounded-md shadow-sm p-3 sm:p-6">
+        
+        <!-- 3. BOX PRINCIPAL DO PRODUTO (GALERIA + DADOS DE COMPRA) -->
+        <section class="bg-white rounded-sm shadow-sm p-3 sm:p-6">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
                 
-                <!-- COLUNA ESQUERDA: GALERIA INTERATIVA DE FOTOS -->
+                <!-- COLUNA ESQUERDA: GALERIA INTERATIVA DE 7 FOTOS (TODAS CLICÁVEIS) -->
                 <div class="lg:col-span-5 flex flex-col gap-3">
-                    <!-- Imagem Principal -->
-                    <div class="relative aspect-square w-full bg-gray-50 rounded-md overflow-hidden border border-gray-100 group">
-                        <!-- Selo de Desconto canto superior direito -->
-                        <div class="absolute top-0 right-0 z-10 bg-shopee-yellow text-shopee-orange font-extrabold px-2.5 py-1 text-center leading-tight rounded-bl-md shadow-sm">
-                            <span class="block text-sm">53%</span>
-                            <span class="block text-[10px] text-white bg-shopee-orange px-1 rounded-xs uppercase">OFF</span>
+                    <!-- Foto Principal -->
+                    <div class="relative aspect-square w-full bg-white rounded-sm overflow-hidden border border-gray-200 group">
+                        <!-- Selo de Desconto -->
+                        <div class="absolute top-0 right-0 z-20 bg-shopee-yellow text-shopee-orange font-extrabold px-2.5 py-1 text-center leading-tight rounded-bl-md shadow-sm pointer-events-none">
+                            <span class="block text-sm">15%</span>
+                            <span class="block text-[10px] text-white bg-shopee-orange px-1 rounded-sm uppercase">OFF</span>
                         </div>
 
-                        <!-- Selo Frete Grátis canto inferior esquerdo -->
-                        <div class="absolute bottom-3 left-3 z-10 bg-shopee-teal text-white text-xs font-bold px-2.5 py-1 rounded shadow flex items-center gap-1">
+                        <!-- Selo Frete Grátis -->
+                        <div class="absolute bottom-3 left-3 z-20 bg-shopee-teal text-white text-xs font-bold px-2.5 py-1 rounded-sm shadow flex items-center gap-1 pointer-events-none">
                             <i data-lucide="truck" class="w-3.5 h-3.5"></i> FRETE GRÁTIS
                         </div>
 
-                        <img id="main-product-image" 
-                             src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" 
-                             onerror="this.src='https://placehold.co/800x800/FFF5F1/EE4D2D?text=Escova+Secadora+3+em+1'"
-                             alt="Escova Secadora Modeladora 3 em 1" 
-                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                        <!-- Link Direto na Foto Principal -->
+                        <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" title="Clique para ver o anúncio na Shopee" class="block w-full h-full cursor-pointer">
+                            <img id="main-product-image" 
+                                 src="https://down-br.img.susercontent.com/file/sg-11134201-8258d-muacxbv8o4cme2@resize_w450_nl.webp" 
+                                 onerror="this.src='https://placehold.co/800x800/18181B/F59E0B?text=Escova+Secadora+3+em+1+1500W'"
+                                 alt="Escova Secadora e Alisadora 3 em 1 Profissional 1500W Bivolt Automático" 
+                                 class="w-full h-full object-contain bg-white transition-transform duration-300 group-hover:scale-105">
+                        </a>
 
                         <!-- Setas de Navegação -->
-                        <button onclick="prevImage()" aria-label="Imagem anterior" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/65 text-white p-2 rounded-full transition">
+                        <button type="button" onclick="prevImage(event)" aria-label="Foto anterior" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-black/45 hover:bg-black/75 text-white p-2 rounded-full transition">
                             <i data-lucide="chevron-left" class="w-5 h-5"></i>
                         </button>
-                        <button onclick="nextImage()" aria-label="Próxima imagem" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/65 text-white p-2 rounded-full transition">
+                        <button type="button" onclick="nextImage(event)" aria-label="Próxima foto" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-black/45 hover:bg-black/75 text-white p-2 rounded-full transition">
                             <i data-lucide="chevron-right" class="w-5 h-5"></i>
                         </button>
                     </div>
 
-                    <!-- Miniaturas Clicáveis -->
-                    <div id="thumbnails-container" class="grid grid-cols-5 gap-2">
-                        <!-- Preenchido via JS para sincronizar seleção ativa -->
+                    <!-- Miniaturas das 7 Fotos (Troca no hover e abre Shopee ao clicar) -->
+                    <div id="thumbnails-container" class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+                        <!-- Renderizado via JS -->
                     </div>
 
-                    <!-- Compartilhar & Favoritos (Detalhe autêntico Shopee) -->
+                    <!-- Compartilhar & Favoritar -->
                     <div class="flex items-center justify-between pt-2 px-1 text-xs sm:text-sm text-gray-600 border-t border-gray-100">
                         <div class="flex items-center gap-2">
                             <span>Compartilhar:</span>
-                            <button onclick="copyPageLink()" class="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center hover:opacity-90" title="Copiar link da oferta">
+                            <button type="button" onclick="copyPageLink()" class="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center hover:opacity-90 transition" title="Copiar link da oferta">
                                 <i data-lucide="share-2" class="w-3.5 h-3.5"></i>
                             </button>
                         </div>
-                        <button id="fav-btn" onclick="toggleFavorite()" class="flex items-center gap-1.5 text-gray-700 hover:text-shopee-orange transition">
+                        <button type="button" id="fav-btn" onclick="toggleFavorite()" class="flex items-center gap-1.5 text-gray-700 hover:text-shopee-orange transition">
                             <i id="fav-icon" data-lucide="heart" class="w-4 h-4 text-shopee-orange fill-shopee-orange"></i>
-                            <span>Favoritado (<span id="fav-count">18,7 mil</span>)</span>
+                            <span>Favoritado (<span id="fav-count">1,4 mil</span>)</span>
                         </button>
                     </div>
                 </div>
 
-                <!-- COLUNA DIREITA: INFORMAÇÕES, PREÇO RELÂMPAGO E COMPRA -->
+                <!-- COLUNA DIREITA: INFORMAÇÕES EXATAS DO ANÚNCIO -->
                 <div class="lg:col-span-7 flex flex-col justify-between space-y-4">
                     
                     <!-- Título e Selo Indicado -->
                     <div>
-                        <div class="inline-flex items-center gap-2 mb-1.5">
-                            <span class="bg-shopee-orange text-white text-xs font-bold px-2 py-0.5 rounded-xs">Indicado</span>
-                            <span class="text-xs font-semibold text-shopee-orange bg-shopee-orangeLight px-2 py-0.5 rounded border border-shopee-orange/20">Mais Vendido na Categoria Beleza</span>
-                        </div>
-                        <h1 class="text-lg sm:text-2xl font-bold text-gray-900 leading-snug">
-                            Escova Secadora Rotativa e Modeladora 3 em 1 Revestimento Cerâmico Íons Tourmaline Bivolt Profissional Anti-Frizz
+                        <h1 class="text-lg sm:text-xl font-medium text-gray-900 leading-snug">
+                            <span class="inline-block align-middle bg-shopee-orange text-white text-xs font-bold px-1.5 py-0.5 rounded-sm mr-1.5 -mt-0.5">Indicado</span>
+                            Escova Secadora e Alisadora 3 em 1 Profissional 1500W Bivolt Automático, Íons Negativos, Seca Alisa e Modela Cabelo
                         </h1>
 
-                        <!-- Métricas de Prova Social (Estrelas, Avaliações, Vendidos) -->
-                        <div class="flex flex-wrap items-center gap-3 sm:gap-4 mt-3 text-xs sm:text-sm">
-                            <a href="#avaliacoes" class="flex items-center gap-1 text-shopee-orange font-bold border-b border-shopee-orange pb-0.5">
-                                <span class="text-base">4.9</span>
-                                <div class="flex items-center text-shopee-orange">
-                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
-                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
-                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
-                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
-                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
+                        <!-- Métricas de Prova Social -->
+                        <div class="flex flex-wrap items-center justify-between gap-2 mt-3 text-xs sm:text-sm">
+                            <div class="flex flex-wrap items-center gap-3 sm:gap-4">
+                                <a href="#avaliacoes" class="flex items-center gap-1 text-shopee-orange font-bold border-b border-shopee-orange pb-0.5">
+                                    <span class="text-base">4.9</span>
+                                    <div class="flex items-center text-shopee-orange">
+                                        <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
+                                        <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
+                                        <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
+                                        <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
+                                        <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
+                                    </div>
+                                </a>
+                                <span class="text-gray-300">|</span>
+                                <a href="#avaliacoes" class="text-gray-700 hover:text-shopee-orange">
+                                    <strong class="border-b border-gray-800 text-gray-900">36</strong> <span class="text-gray-500">Avaliações</span>
+                                </a>
+                                <span class="text-gray-300">|</span>
+                                <div class="text-gray-700">
+                                    <strong class="text-gray-900">120</strong> <span class="text-gray-500">Vendidos</span>
                                 </div>
-                            </a>
-                            <span class="text-gray-300">|</span>
-                            <a href="#avaliacoes" class="text-gray-700 hover:text-shopee-orange">
-                                <strong class="underline text-gray-900">12,4 mil</strong> Avaliações
-                            </a>
-                            <span class="text-gray-300">|</span>
-                            <div class="text-gray-700">
-                                <strong class="text-gray-900">38,9 mil</strong> Vendidos
                             </div>
+                            <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="text-xs text-gray-400 hover:text-gray-600">
+                                Denunciar
+                            </a>
                         </div>
                     </div>
 
-                    <!-- BOX DE PREÇO ESTILO OFERTA RELÂMPAGO SHOPEE -->
-                    <div class="rounded-md overflow-hidden border border-orange-200 shadow-xs">
-                        <!-- Barra Superior Oferta Relâmpago -->
-                        <div class="bg-gradient-to-r from-[#EE4D2D] via-[#F53D2D] to-[#FF6633] px-4 py-2 flex flex-wrap items-center justify-between gap-2 text-white">
-                            <div class="flex items-center gap-1.5 font-extrabold tracking-wide text-sm sm:text-base italic">
+                    <!-- BOX DE PREÇO EXATO (R$ 84,64 NO PIX COM CUPOM) -->
+                    <div class="rounded-sm overflow-hidden border border-orange-100">
+                        <div class="bg-gradient-to-r from-[#EE4D2D] via-[#F53D2D] to-[#FF6633] px-4 py-1.5 flex flex-wrap items-center justify-between gap-2 text-white">
+                            <div class="flex items-center gap-1.5 font-extrabold tracking-wide text-xs sm:text-sm italic">
                                 <i data-lucide="zap" class="w-4 h-4 fill-yellow-300 text-yellow-300"></i>
-                                <span>OFERTA RELÂMPAGO</span>
+                                <span>PREÇO PROMOCIONAL COM CUPOM</span>
                             </div>
-                            <div class="flex items-center gap-2 text-xs">
+                            <div class="flex items-center gap-1.5 text-xs">
                                 <span class="uppercase font-medium opacity-95">Termina em</span>
                                 <div class="flex items-center gap-1 font-mono font-bold">
                                     <span id="box-hours" class="bg-gray-900 text-white px-1.5 py-0.5 rounded">01</span>:
-                                    <span id="box-minutes" class="bg-gray-900 text-white px-1.5 py-0.5 rounded">42</span>:
-                                    <span id="box-seconds" class="bg-gray-900 text-white px-1.5 py-0.5 rounded">19</span>
+                                    <span id="box-minutes" class="bg-gray-900 text-white px-1.5 py-0.5 rounded">48</span>:
+                                    <span id="box-seconds" class="bg-gray-900 text-white px-1.5 py-0.5 rounded">35</span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Corpo do Preço -->
-                        <div class="bg-[#FAFAFA] p-4">
-                            <div class="flex flex-wrap items-baseline gap-3">
-                                <span class="text-gray-400 line-through text-sm sm:text-base">R$ 189,90</span>
-                                <span class="text-3xl sm:text-4xl font-extrabold text-shopee-orange">R$ 89,90</span>
-                                <span class="bg-shopee-orange text-white text-xs font-bold px-2 py-0.5 rounded-xs uppercase">53% OFF</span>
+                        <div class="bg-[#FAFAFA] p-4 space-y-1.5">
+                            <div class="flex flex-wrap items-baseline gap-2.5">
+                                <span class="text-gray-400 line-through text-sm">R$ 98,99</span>
+                                <span class="text-3xl sm:text-4xl font-bold text-shopee-orange">R$ 84,64</span>
+                                <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="text-shopee-orange font-semibold text-xs sm:text-sm hover:underline flex items-center gap-0.5">
+                                    <span>no Pix com cupom</span>
+                                    <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                                </a>
                             </div>
-                            <p class="text-xs text-gray-600 mt-1">
-                                Em até <strong>6x de R$ 14,98 sem juros</strong> no cartão ou à vista no Pix com aprovação imediata.
+                            <p class="text-xs text-gray-500">
+                                ou <span class="text-gray-700 font-medium">R$ 98,99</span> sem cupom em outros métodos de pagamento
                             </p>
+                        </div>
+                    </div>
 
-                            <!-- Barra de Progresso Vendidos -->
-                            <div class="mt-3 flex items-center gap-3">
-                                <div class="flex-1 h-4 rounded-full flash-progress-bg flex items-center justify-center">
-                                    <div class="flash-progress-fill h-full rounded-full absolute left-0 top-0" style="width: 87%;"></div>
-                                    <span class="relative z-10 text-[10px] font-extrabold text-white uppercase tracking-wider drop-shadow">
-                                        🔥 87% VENDIDO — ÚLTIMAS UNIDADES NO LOTE
-                                    </span>
+                    <!-- TABELA DE PARCELAMENTO E FRETE -->
+                    <div class="space-y-3 text-xs sm:text-sm border-b border-gray-100 pb-4">
+                        <!-- Cartão de Crédito -->
+                        <div class="flex items-center gap-3">
+                            <span class="text-gray-500 w-32 shrink-0">Cartão de Crédito</span>
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="text-gray-800 font-medium">12x R$ 8,64</span>
+                                <button type="button" onclick="openInstallmentsModal()" class="text-[#0055AA] text-xs hover:underline inline-flex items-center gap-0.5">
+                                    <span>Opções de parcelamento</span>
+                                    <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Enviado de / Frete -->
+                        <div class="flex items-start gap-3">
+                            <span class="text-gray-500 w-32 shrink-0">Enviado de</span>
+                            <div class="space-y-1.5 flex-1">
+                                <div class="flex items-center gap-2 text-gray-800 font-medium">
+                                    <i data-lucide="truck" class="w-4 h-4 text-shopee-teal shrink-0"></i>
+                                    <span>Receba até 26/nov</span>
                                 </div>
+                                <div class="grid grid-cols-2 max-w-xs gap-y-1 text-xs">
+                                    <span class="text-gray-500">Enviado de</span>
+                                    <span class="text-gray-800 font-medium">São Paulo, São Paulo</span>
+                                    <span class="text-gray-500">Frete</span>
+                                    <div>
+                                        <span class="text-gray-400 line-through mr-1">R$ 8,39</span>
+                                        <span class="text-gray-900 font-semibold">R$ 0,00</span>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 font-medium">
+                                    <span class="text-shopee-teal font-bold">Frete grátis</span> com cupom
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- INFORMAÇÕES DE FRETE E CUPOM -->
-                    <div class="space-y-2.5 text-xs sm:text-sm border-b border-gray-100 pb-4">
-                        <div class="flex items-start gap-3">
-                            <span class="text-gray-500 w-24 shrink-0">Cupom da Loja</span>
-                            <div class="flex flex-wrap gap-1.5">
-                                <span class="bg-shopee-orangeLight text-shopee-orange border border-dashed border-shopee-orange px-2 py-0.5 rounded text-xs font-semibold">
-                                    R$ 10 OFF aplicado
-                                </span>
-                                <span class="bg-teal-50 text-teal-700 border border-dashed border-teal-500 px-2 py-0.5 rounded text-xs font-semibold">
-                                    Frete Grátis Acima de R$ 19
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <span class="text-gray-500 w-24 shrink-0">Frete</span>
-                            <div class="flex items-start gap-2">
-                                <i data-lucide="truck" class="w-4 h-4 text-shopee-teal shrink-0 mt-0.5"></i>
-                                <div>
-                                    <p class="font-semibold text-gray-800">Frete Grátis com Cupom Shopee</p>
-                                    <p class="text-xs text-gray-500">Envio Imediato do Brasil (Centro de Distribuição SP) • Sem taxas extras</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SELEÇÃO INTERATIVA DE COR E VOLTAGEM -->
+                    <!-- SELETORES INTERATIVOS: VOLTAGEM E QUANTIDADE -->
                     <div class="space-y-4">
-                        <!-- Cor -->
-                        <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
-                            <span class="text-xs sm:text-sm text-gray-500 w-24 shrink-0">Cor</span>
-                            <div class="flex flex-wrap gap-2" id="color-options">
-                                <button type="button" onclick="selectColor(this, 'Preto com Rosa')" class="variant-color-btn border-2 border-shopee-orange bg-shopee-orangeLight text-shopee-orange font-semibold px-3 py-1.5 rounded text-xs sm:text-sm flex items-center gap-2 transition">
-                                    <span class="w-3.5 h-3.5 rounded-full bg-gradient-to-tr from-black to-pink-500 border border-gray-300"></span>
-                                    Preto com Rosa
-                                </button>
-                                <button type="button" onclick="selectColor(this, 'Preto com Dourado')" class="variant-color-btn border border-gray-300 bg-white hover:border-shopee-orange text-gray-700 font-medium px-3 py-1.5 rounded text-xs sm:text-sm flex items-center gap-2 transition">
-                                    <span class="w-3.5 h-3.5 rounded-full bg-gradient-to-tr from-black to-amber-400 border border-gray-300"></span>
-                                    Preto com Dourado
-                                </button>
-                            </div>
-                        </div>
-
                         <!-- Voltagem -->
                         <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
-                            <span class="text-xs sm:text-sm text-gray-500 w-24 shrink-0">Voltagem</span>
-                            <div class="flex flex-wrap gap-2" id="voltage-options">
-                                <button type="button" onclick="selectVoltage(this, 'Bivolt (110V/220V)')" class="variant-volt-btn border-2 border-shopee-orange bg-shopee-orangeLight text-shopee-orange font-semibold px-3 py-1.5 rounded text-xs sm:text-sm transition">
-                                    Bivolt (110V/220V) ⭐ Mais Pedido
+                            <span class="text-xs sm:text-sm text-gray-500 w-32 shrink-0">Voltagem</span>
+                            <div class="flex flex-wrap items-center gap-2.5" id="voltage-options">
+                                <button type="button" onclick="selectVoltage(this, '110V')" class="variant-volt-btn border-2 border-shopee-orange bg-shopee-orangeLight text-shopee-orange font-semibold px-4 py-2 rounded-sm text-xs sm:text-sm flex items-center gap-2 transition">
+                                    <img src="https://down-br.img.susercontent.com/file/sg-11134201-8258d-muacxbv8o4cme2@resize_w450_nl.webp" onerror="this.style.display='none'" alt="110V" class="w-5 h-5 object-contain rounded-sm">
+                                    <span>110V</span>
                                 </button>
-                                <button type="button" onclick="selectVoltage(this, '110V')" class="variant-volt-btn border border-gray-300 bg-white hover:border-shopee-orange text-gray-700 font-medium px-3 py-1.5 rounded text-xs sm:text-sm transition">
-                                    110V
-                                </button>
-                                <button type="button" onclick="selectVoltage(this, '220V')" class="variant-volt-btn border border-gray-300 bg-white hover:border-shopee-orange text-gray-700 font-medium px-3 py-1.5 rounded text-xs sm:text-sm transition">
-                                    220V
+                                <button type="button" onclick="selectVoltage(this, '220V')" class="variant-volt-btn border border-gray-300 bg-white hover:border-shopee-orange text-gray-700 font-medium px-4 py-2 rounded-sm text-xs sm:text-sm flex items-center gap-2 transition">
+                                    <img src="https://down-br.img.susercontent.com/file/sg-11134201-8258d-muacxbv8o4cme2@resize_w450_nl.webp" onerror="this.style.display='none'" alt="220V" class="w-5 h-5 object-contain rounded-sm">
+                                    <span>220V</span>
                                 </button>
                             </div>
                         </div>
 
-                        <!-- Estoque disponível -->
-                        <div class="flex items-center gap-3 text-xs text-gray-500">
-                            <span class="w-24 shrink-0">Estoque</span>
-                            <span class="text-emerald-600 font-semibold flex items-center gap-1">
-                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-                                Disponível (Apenas 14 unidades promocionais restantes)
-                            </span>
+                        <!-- Quantidade -->
+                        <div class="flex items-center gap-3">
+                            <span class="text-xs sm:text-sm text-gray-500 w-32 shrink-0">Quantidade</span>
+                            <div class="flex items-center gap-4">
+                                <div class="inline-flex items-center border border-gray-300 rounded-sm bg-white">
+                                    <button type="button" onclick="changeQty(-1)" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:bg-gray-100 transition font-bold">−</button>
+                                    <span id="qty-value" class="w-10 text-center text-sm font-medium text-gray-800 border-x border-gray-300 py-1">1</span>
+                                    <button type="button" onclick="changeQty(1)" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:bg-gray-100 transition font-bold">+</button>
+                                </div>
+                                <span class="text-xs text-gray-500 font-medium">Estoque disponível</span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- BOTÃO PRINCIPAL GIGANTE E PULSANTE ESTILO SHOPEE -->
-                    <div id="comprar-agora" class="pt-2 space-y-3">
-                        <a href="#LINK_AFILIADO_SHOPEE" onclick="goToAffiliate(event)" class="btn-shopee-pulse w-full bg-shopee-orange hover:bg-shopee-orangeHover text-white font-extrabold text-base sm:text-lg py-4 px-6 rounded-md shadow-lg flex items-center justify-center gap-3 transition cursor-pointer">
-                            <i data-lucide="shopping-bag" class="w-6 h-6"></i>
-                            <span>COMPRAR AGORA NA SHOPEE</span>
-                        </a>
+                    <!-- BOTÕES PRINCIPAIS DE AÇÃO (APONTANDO PARA O LINK DE AFILIADO) -->
+                    <div class="pt-2 space-y-3">
+                        <div class="grid grid-cols-1 sm:grid-cols-12 gap-3">
+                            <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="sm:col-span-5 border border-shopee-orange bg-shopee-orangeLight hover:bg-orange-100 text-shopee-orange font-semibold text-sm py-3.5 px-4 rounded-sm flex items-center justify-center gap-2 transition">
+                                <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                                <span>Adicionar ao carrinho</span>
+                            </a>
+                            <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="btn-shopee-pulse sm:col-span-7 bg-shopee-orange hover:bg-shopee-orangeHover text-white font-extrabold text-sm sm:text-base py-3.5 px-6 rounded-sm shadow-md flex flex-col items-center justify-center leading-tight transition">
+                                <span>Compre com cupom</span>
+                                <span class="text-xs sm:text-sm font-bold text-yellow-100">R$ 84,64</span>
+                            </a>
+                        </div>
                         <p class="text-center text-xs text-gray-500 flex items-center justify-center gap-1.5">
-                            <i data-lucide="lock" class="w-3.5 h-3.5 text-emerald-600"></i>
-                            Você será redirecionada com segurança para o aplicativo/site oficial da Shopee com o desconto aplicado.
+                            <i data-lucide="shield-check" class="w-4 h-4 text-shopee-orange shrink-0"></i>
+                            <span><strong>Garantia Shopee:</strong> Receba o produto que está esperando ou devolvemos o seu dinheiro.</span>
                         </p>
                     </div>
 
-                    <!-- SELO GARANTIA SHOPEE -->
-                    <div class="border-t border-gray-100 pt-3 flex flex-wrap items-center justify-between gap-2 text-xs text-gray-600">
-                        <div class="flex items-center gap-1.5">
-                            <i data-lucide="shield-check" class="w-4 h-4 text-shopee-orange"></i>
-                            <span><strong>Garantia Shopee:</strong> Receba o produto que está esperando ou devolvemos o seu dinheiro.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================== -->
+        <!-- 4. BLOCO DA LOJA OFICIAL: ESPAÇO FUTURO                              -->
+        <!-- ===================================================================== -->
+        <section class="bg-white rounded-sm shadow-sm p-4 sm:p-6">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                <!-- Perfil da Loja -->
+                <div class="flex items-center gap-4 lg:border-r lg:border-gray-200 lg:pr-8 shrink-0">
+                    <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="relative block shrink-0 group">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-gray-900 to-gray-700 border-2 border-gray-200 flex items-center justify-center text-white font-extrabold text-xl shadow-sm group-hover:border-shopee-orange transition">
+                            EF
+                        </div>
+                        <span class="absolute -bottom-1 left-1/2 -translate-x-1/2 bg-shopee-orange text-white text-[10px] font-bold px-2 py-0.5 rounded-sm whitespace-nowrap shadow">
+                            Indicado
+                        </span>
+                    </a>
+                    <div class="space-y-2">
+                        <div>
+                            <h2 class="text-base font-bold text-gray-900 leading-tight">Espaço Futuro</h2>
+                            <p class="text-xs text-emerald-600 font-medium flex items-center gap-1 mt-0.5">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span> Online
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="border border-shopee-orange bg-shopee-orangeLight hover:bg-orange-100 text-shopee-orange text-xs font-semibold px-3 py-1.5 rounded-sm flex items-center gap-1.5 transition">
+                                <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+                                <span>Conversar agora</span>
+                            </a>
+                            <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 text-xs font-medium px-3 py-1.5 rounded-sm flex items-center gap-1.5 transition">
+                                <i data-lucide="store" class="w-3.5 h-3.5"></i>
+                                <span>Ver página da loja</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Métricas Reais da Loja Espaço Futuro -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-3 flex-1 text-xs sm:text-sm">
+                    <div class="flex items-center justify-between sm:justify-start sm:gap-3">
+                        <span class="text-gray-500">Avaliações</span>
+                        <span class="text-shopee-orange font-semibold">42,1mil</span>
+                    </div>
+                    <div class="flex items-center justify-between sm:justify-start sm:gap-3">
+                        <span class="text-gray-500">Taxa de resposta do chat</span>
+                        <span class="text-shopee-orange font-semibold">98%</span>
+                    </div>
+                    <div class="flex items-center justify-between sm:justify-start sm:gap-3">
+                        <span class="text-gray-500">Loja Shopee desde</span>
+                        <span class="text-shopee-orange font-semibold">15 meses atrás</span>
+                    </div>
+                    <div class="flex items-center justify-between sm:justify-start sm:gap-3">
+                        <span class="text-gray-500">Produtos</span>
+                        <span class="text-shopee-orange font-semibold">107</span>
+                    </div>
+                    <div class="flex items-center justify-between sm:justify-start sm:gap-3">
+                        <span class="text-gray-500">Responde o chat em</span>
+                        <span class="text-shopee-orange font-semibold">dentro de minutos</span>
+                    </div>
+                    <div class="flex items-center justify-between sm:justify-start sm:gap-3">
+                        <span class="text-gray-500">Seguidores</span>
+                        <span class="text-shopee-orange font-semibold">3mil</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================== -->
+        <!-- 5. DETALHES DO PRODUTO E DESCRIÇÃO OFICIAL (ÁTOMO MO-F5)              -->
+        <!-- ===================================================================== -->
+        <section class="bg-white rounded-sm shadow-sm p-4 sm:p-6 space-y-6">
+            <!-- Tabela Detalhes do Produto -->
+            <div>
+                <div class="bg-[#FAFAFA] px-4 py-3 text-sm sm:text-base font-bold text-gray-900 uppercase tracking-wide mb-4">
+                    Detalhes do Produto
+                </div>
+                <div class="px-2 sm:px-4 space-y-3 text-xs sm:text-sm">
+                    <div class="grid grid-cols-12 gap-2">
+                        <span class="col-span-5 sm:col-span-3 text-gray-500">Categoria</span>
+                        <div class="col-span-7 sm:col-span-9 text-[#0055AA] flex flex-wrap items-center gap-1">
+                            <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="hover:underline">Shopee</a>
+                            <span>&gt;</span>
+                            <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="hover:underline">Beleza</a>
+                            <span>&gt;</span>
+                            <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="hover:underline">Utensílios de Beleza</a>
+                            <span>&gt;</span>
+                            <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="hover:underline">Utensílios Capilares</a>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <span class="col-span-5 sm:col-span-3 text-gray-500">Estoque</span>
+                        <span class="col-span-7 sm:col-span-9 text-gray-800 font-medium">Estoque disponível</span>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <span class="col-span-5 sm:col-span-3 text-gray-500">Marca</span>
+                        <span class="col-span-7 sm:col-span-9 text-gray-800 font-medium">Átomo</span>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <span class="col-span-5 sm:col-span-3 text-gray-500">Modelo</span>
+                        <span class="col-span-7 sm:col-span-9 text-gray-800">Escova Secadora Modeladora (MO-F5)</span>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <span class="col-span-5 sm:col-span-3 text-gray-500">País de Origem</span>
+                        <span class="col-span-7 sm:col-span-9 text-gray-800">China</span>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <span class="col-span-5 sm:col-span-3 text-gray-500">Material</span>
+                        <span class="col-span-7 sm:col-span-9 text-gray-800">Plástico + Cerdas de Nylon</span>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <span class="col-span-5 sm:col-span-3 text-gray-500">Tensão de Entrada</span>
+                        <span class="col-span-7 sm:col-span-9 text-gray-800">110V / 220V</span>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <span class="col-span-5 sm:col-span-3 text-gray-500">Tipo de Plug</span>
+                        <span class="col-span-7 sm:col-span-9 text-gray-800">Plugue BR</span>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <span class="col-span-5 sm:col-span-3 text-gray-500">Dimensões do Produto (A x L x C), sem a caixa de embalagem</span>
+                        <span class="col-span-7 sm:col-span-9 text-gray-800">32cm x 8cm x 8cm</span>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <span class="col-span-5 sm:col-span-3 text-gray-500">Quantidade da embalagem</span>
+                        <span class="col-span-7 sm:col-span-9 text-gray-800">1</span>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <span class="col-span-5 sm:col-span-3 text-gray-500">Envio de</span>
+                        <span class="col-span-7 sm:col-span-9 text-gray-800">São Paulo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Descrição Completa do Produto -->
+            <div>
+                <div class="bg-[#FAFAFA] px-4 py-3 text-sm sm:text-base font-bold text-gray-900 uppercase tracking-wide mb-4">
+                    Descrição do Produto
+                </div>
+                <div class="px-2 sm:px-4 text-xs sm:text-sm text-gray-700 leading-relaxed space-y-5">
+                    <div class="space-y-2">
+                        <h3 class="text-base sm:text-lg font-bold text-gray-900">
+                            Escova Secadora Modeladora Átomo MO-F5 – Seca, Alisa e Modela
+                        </h3>
+                        <p>
+                            Escova secadora multifuncional que combina secagem e modelagem em um único aparelho. Ideal para facilitar a rotina de cuidados com os cabelos, permitindo secar, escovar, alisar e modelar os fios com praticidade.
+                        </p>
+                        <p>
+                            O design leve e ergonômico proporciona mais conforto durante o uso, enquanto as cerdas combinadas ajudam a desembaraçar os fios e facilitam a modelagem.
+                        </p>
+                    </div>
+
+                    <!-- Principais Características -->
+                    <div class="space-y-2">
+                        <h4 class="font-bold text-gray-900 text-sm sm:text-base">Principais Características</h4>
+                        <ul class="space-y-1.5 pl-1">
+                            <li class="flex items-start gap-2"><span class="text-shopee-orange font-bold">•</span> <span>Seca, escova, alisa e modela</span></li>
+                            <li class="flex items-start gap-2"><span class="text-shopee-orange font-bold">•</span> <span>Cerdas combinadas que ajudam a desembaraçar os fios</span></li>
+                            <li class="flex items-start gap-2"><span class="text-shopee-orange font-bold">•</span> <span>Estrutura em alumínio para distribuição uniforme do calor</span></li>
+                            <li class="flex items-start gap-2"><span class="text-shopee-orange font-bold">•</span> <span>Sistema de ventilação para auxiliar na secagem</span></li>
+                            <li class="flex items-start gap-2"><span class="text-shopee-orange font-bold">•</span> <span>Design leve e ergonômico</span></li>
+                            <li class="flex items-start gap-2"><span class="text-shopee-orange font-bold">•</span> <span>Cabo giratório para facilitar os movimentos</span></li>
+                            <li class="flex items-start gap-2"><span class="text-shopee-orange font-bold">•</span> <span>Prática para o uso diário</span></li>
+                            <li class="flex items-start gap-2"><span class="text-shopee-orange font-bold">•</span> <span>Indicada para uso doméstico ou profissional</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Design e Funcionamento -->
+                    <div class="space-y-3">
+                        <h4 class="font-bold text-gray-900 text-sm sm:text-base">Design e Funcionamento</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="bg-gray-50 border border-gray-100 p-3.5 rounded-sm">
+                                <p class="font-bold text-gray-900">Sistema All-in-One</p>
+                                <p class="text-gray-600 mt-1">Reúne as funções de secagem e modelagem em um único aparelho, facilitando a rotina de cuidados com os cabelos.</p>
+                            </div>
+                            <div class="bg-gray-50 border border-gray-100 p-3.5 rounded-sm">
+                                <p class="font-bold text-gray-900">Cerdas Combinadas</p>
+                                <p class="text-gray-600 mt-1">Os pinos de nylon ajudam a desembaraçar os fios e facilitam a escovação e a modelagem.</p>
+                            </div>
+                            <div class="bg-gray-50 border border-gray-100 p-3.5 rounded-sm">
+                                <p class="font-bold text-gray-900">Sistema de Ventilação</p>
+                                <p class="text-gray-600 mt-1">As aberturas de ventilação favorecem a circulação do ar durante o uso, auxiliando na secagem dos cabelos.</p>
+                            </div>
+                            <div class="bg-gray-50 border border-gray-100 p-3.5 rounded-sm">
+                                <p class="font-bold text-gray-900">Design Ergonômico</p>
+                                <p class="text-gray-600 mt-1">Formato leve e confortável para facilitar o manuseio durante a escovação.</p>
+                            </div>
+                            <div class="bg-gray-50 border border-gray-100 p-3.5 rounded-sm md:col-span-2">
+                                <p class="font-bold text-gray-900">Cabo Giratório</p>
+                                <p class="text-gray-600 mt-1">O cabo com rotação facilita os movimentos e ajuda a evitar que o fio fique enrolado durante o uso.</p>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Ideal Para + Informações + Conteúdo da Embalagem -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-1">
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-gray-900 text-sm sm:text-base">Ideal para</h4>
+                            <ul class="space-y-1 pl-1">
+                                <li>- Secar os cabelos após o banho</li>
+                                <li>- Escovar e alinhar os fios</li>
+                                <li>- Modelar o cabelo no dia a dia</li>
+                                <li>- Facilitar a rotina de cuidados em casa</li>
+                                <li>- Uso doméstico ou profissional</li>
+                            </ul>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="space-y-1">
+                                <h4 class="font-bold text-gray-900 text-sm sm:text-base">Informações do Produto</h4>
+                                <p><strong>Marca:</strong> Átomo</p>
+                                <p><strong>Modelo:</strong> MO-F5</p>
+                                <p><strong>Tipo:</strong> Escova Secadora Modeladora</p>
+                                <p><strong>Funções:</strong> Secar, escovar, alisar e modelar</p>
+                            </div>
+
+                            <div class="space-y-1">
+                                <h4 class="font-bold text-gray-900 text-sm sm:text-base">Conteúdo da Embalagem</h4>
+                                <p>- 1 × Escova Secadora Modeladora Átomo MO-F5</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Aviso de Segurança -->
+                    <div class="bg-amber-50 border border-amber-200 text-amber-900 p-3 rounded-sm text-xs">
+                        <strong>Atenção:</strong> Utilize o aparelho conforme as instruções do fabricante. Não utilize próximo à água ou com o aparelho molhado.
+                    </div>
+
+                    <!-- Botão de Conversão na Descrição -->
+                    <div class="pt-2">
+                        <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-shopee-orange hover:bg-shopee-orangeHover text-white font-bold text-xs sm:text-sm px-6 py-3 rounded-sm shadow transition">
+                            <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                            <span>COMPRAR COM CUPOM POR R$ 84,64 NA SHOPEE</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. SEÇÃO: POR QUE ESSA ESCOVA VIROU FEBRE ENTRE AS MULHERES? -->
-        <section class="bg-white rounded-md shadow-sm p-4 sm:p-6">
-            <div class="border-b border-gray-100 pb-3 mb-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-shopee-orange">Tecnologia de Salão em Casa</span>
-                    <h2 class="text-lg sm:text-xl font-extrabold text-gray-900 mt-0.5">
-                        Por que essa escova virou febre entre as mulheres?
-                    </h2>
-                </div>
-                <span class="text-xs bg-shopee-orangeLight text-shopee-orange font-semibold px-3 py-1 rounded-full self-start sm:self-auto">
-                    +38.900 mulheres já aprovaram
-                </span>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <!-- Card 1 -->
-                <div class="border border-gray-100 bg-[#FAFAFA] hover:border-shopee-orange/40 rounded-md p-4 transition">
-                    <div class="w-11 h-11 rounded-lg bg-shopee-orangeLight text-shopee-orange flex items-center justify-center mb-3">
-                        <i data-lucide="clock" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-900 text-sm sm:text-base mb-1.5">Seca, Alisa e Modela em 10 Minutos</h3>
-                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        Esqueça o malabarismo com secador pesado em uma mão e escova na outra. Faça escova de salão sozinha antes do trabalho ou academia.
-                    </p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="border border-gray-100 bg-[#FAFAFA] hover:border-shopee-orange/40 rounded-md p-4 transition">
-                    <div class="w-11 h-11 rounded-lg bg-shopee-orangeLight text-shopee-orange flex items-center justify-center mb-3">
-                        <i data-lucide="sparkles" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-900 text-sm sm:text-base mb-1.5">Íons Negativos Zero Frizz</h3>
-                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        Libera íons tourmaline que selam as cutículas dos fios instantaneamente, eliminando o frizz e garantindo brilho espelhado.
-                    </p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="border border-gray-100 bg-[#FAFAFA] hover:border-shopee-orange/40 rounded-md p-4 transition">
-                    <div class="w-11 h-11 rounded-lg bg-shopee-orangeLight text-shopee-orange flex items-center justify-center mb-3">
-                        <i data-lucide="flame" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-900 text-sm sm:text-base mb-1.5">Revestimento Cerâmico Protetor</h3>
-                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        Distribui o calor de maneira uniforme sem queimar ou ressecar as pontas. Ideal para cabelos lisos, ondulados, cacheados ou com química.
-                    </p>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="border border-gray-100 bg-[#FAFAFA] hover:border-shopee-orange/40 rounded-md p-4 transition">
-                    <div class="w-11 h-11 rounded-lg bg-shopee-orangeLight text-shopee-orange flex items-center justify-center mb-3">
-                        <i data-lucide="feather" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-900 text-sm sm:text-base mb-1.5">Super Leve, Ergonômica e 360°</h3>
-                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        Design pensado para não cansar o braço, com ponta fria para apoiar as mãos, 3 níveis de temperatura e cabo giratório 360° que não enrosca.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. SEÇÃO: ANTES E DEPOIS / RESULTADOS REAIS -->
-        <section class="bg-white rounded-md shadow-sm p-4 sm:p-6">
-            <div class="text-center max-w-2xl mx-auto mb-6">
-                <span class="text-xs font-bold uppercase tracking-wider text-shopee-orange">Transformação Real</span>
-                <h2 class="text-lg sm:text-2xl font-extrabold text-gray-900 mt-1">
-                    Resultado de Salão Sem Gastar R$ 80 toda semana
-                </h2>
-                <p class="text-xs sm:text-sm text-gray-600 mt-1">
-                    Veja a diferença imediata no alinhamento, brilho e redução de volume com apenas uma passada.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
-                <!-- Card ANTES -->
-                <div class="relative rounded-lg overflow-hidden border border-gray-200 bg-gray-50">
-                    <span class="absolute top-3 left-3 z-10 bg-gray-900/85 text-white text-xs font-bold px-3 py-1 rounded">
-                        ANTES (Fios com frizz e sem forma)
-                    </span>
-                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80" 
-                         onerror="this.src='https://placehold.co/800x550/E5E7EB/374151?text=Antes+da+Escova'"
-                         alt="Cabelo antes da escova" 
-                         class="w-full h-64 sm:h-72 object-cover filter saturate-75">
-                    <div class="p-3 bg-white border-t border-gray-100 text-xs text-gray-600 flex items-center gap-2">
-                        <i data-lucide="x-circle" class="w-4 h-4 text-red-500 shrink-0"></i>
-                        <span>Demora 40 minutos com secador comum e deixa o cabelo armado.</span>
-                    </div>
-                </div>
-
-                <!-- Card DEPOIS -->
-                <div class="relative rounded-lg overflow-hidden border-2 border-shopee-orange bg-shopee-orangeLight/30">
-                    <span class="absolute top-3 left-3 z-10 bg-shopee-orange text-white text-xs font-bold px-3 py-1 rounded shadow">
-                        DEPOIS (10 min com a Escova 3 em 1 ✨)
-                    </span>
-                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=85" 
-                         onerror="this.src='https://placehold.co/800x550/FFF5F1/EE4D2D?text=Depois+Cabelo+Modelado+Brilhante'"
-                         alt="Cabelo liso e modelado com brilho" 
-                         class="w-full h-64 sm:h-72 object-cover">
-                    <div class="p-3 bg-white border-t border-orange-100 text-xs text-gray-800 font-medium flex items-center gap-2">
-                        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
-                        <span>Alinhamento perfeito, pontas modeladas e brilho intenso em minutos!</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA Intermediário -->
-            <div class="mt-6 text-center">
-                <a href="#LINK_AFILIADO_SHOPEE" onclick="goToAffiliate(event)" class="inline-flex items-center justify-center gap-2 bg-shopee-orange hover:bg-shopee-orangeHover text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-md shadow transition">
-                    <span>QUERO GARANTIR A MINHA COM 53% OFF</span>
-                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-            </div>
-        </section>
-
-        <!-- 5. SEÇÃO DE AVALIAÇÕES DE CLIENTES ESTILO SHOPEE -->
-        <section id="avaliacoes" class="bg-white rounded-md shadow-sm p-4 sm:p-6">
+        <!-- ===================================================================== -->
+        <!-- 6. AVALIAÇÕES DO PRODUTO (4.9 DE 5 • 36 AVALIAÇÕES)                   -->
+        <!-- ===================================================================== -->
+        <section id="avaliacoes" class="bg-white rounded-sm shadow-sm p-4 sm:p-6">
             <h2 class="text-base sm:text-lg font-bold text-gray-900 uppercase tracking-wide mb-4">
                 Avaliações do Produto
             </h2>
 
-            <!-- Resumo Geral das Notas Estilo Shopee -->
-            <div class="bg-[#FFFBF8] border border-[#F9EDE5] rounded-md p-4 sm:p-6 mb-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+            <!-- Resumo das Notas -->
+            <div class="bg-[#FFFBF8] border border-[#F9EDE5] rounded-sm p-4 sm:p-6 mb-6 flex flex-col md:flex-row items-start md:items-center gap-6">
                 <div class="text-center md:text-left shrink-0">
                     <div class="text-shopee-orange font-extrabold text-3xl sm:text-4xl">
                         4.9 <span class="text-base sm:text-lg font-medium">de 5</span>
@@ -522,32 +626,28 @@
                         <i data-lucide="star" class="w-4 h-4 fill-shopee-orange"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-shopee-orange"></i>
                     </div>
-                    <p class="text-xs text-gray-500 mt-1">12.438 avaliações verificadas</p>
+                    <p class="text-xs text-gray-500 mt-1">36 avaliações</p>
                 </div>
 
-                <!-- Botões de Filtro Estilo Shopee -->
+                <!-- Filtros Estilo Shopee -->
                 <div class="flex flex-wrap gap-2" id="review-filters">
-                    <button onclick="filterReviews('all', this)" class="review-filter-btn border border-shopee-orange bg-white text-shopee-orange font-semibold text-xs sm:text-sm px-3.5 py-1.5 rounded-xs transition">
-                        Tudo (12,4 mil)
+                    <button type="button" onclick="filterReviews('all', this)" class="review-filter-btn border border-shopee-orange bg-white text-shopee-orange font-semibold text-xs sm:text-sm px-3.5 py-1.5 rounded-sm transition">
+                        Tudo (36)
                     </button>
-                    <button onclick="filterReviews('5', this)" class="review-filter-btn border border-gray-200 bg-white text-gray-700 hover:border-shopee-orange text-xs sm:text-sm px-3.5 py-1.5 rounded-xs transition">
-                        5 Estrelas (11,8 mil)
+                    <button type="button" onclick="filterReviews('5', this)" class="review-filter-btn border border-gray-200 bg-white text-gray-700 hover:border-shopee-orange text-xs sm:text-sm px-3.5 py-1.5 rounded-sm transition">
+                        5 Estrelas (34)
                     </button>
-                    <button onclick="filterReviews('media', this)" class="review-filter-btn border border-gray-200 bg-white text-gray-700 hover:border-shopee-orange text-xs sm:text-sm px-3.5 py-1.5 rounded-xs transition">
-                        Com Mídia (4,2 mil)
-                    </button>
-                    <button onclick="filterReviews('bivolt', this)" class="review-filter-btn border border-gray-200 bg-white text-gray-700 hover:border-shopee-orange text-xs sm:text-sm px-3.5 py-1.5 rounded-xs transition">
-                        Comentários sobre Potência (3,1 mil)
+                    <button type="button" onclick="filterReviews('media', this)" class="review-filter-btn border border-gray-200 bg-white text-gray-700 hover:border-shopee-orange text-xs sm:text-sm px-3.5 py-1.5 rounded-sm transition">
+                        Com Mídia (19)
                     </button>
                 </div>
             </div>
 
-            <!-- Lista de Comentários Autênticos -->
+            <!-- Depoimentos de Clientes com Fotos Clicáveis -->
             <div id="reviews-list" class="divide-y divide-gray-100">
-                
                 <!-- Avaliação 1 -->
-                <article class="review-item py-4 flex gap-3 sm:gap-4" data-category="5 media bivolt">
-                    <div class="w-10 h-10 rounded-full bg-pink-100 text-pink-700 font-bold flex items-center justify-center shrink-0 text-sm">
+                <article class="review-item py-4 flex gap-3 sm:gap-4" data-category="5 media">
+                    <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center shrink-0 text-sm">
                         M
                     </div>
                     <div class="flex-1 space-y-1.5">
@@ -560,30 +660,33 @@
                             <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
                         </div>
                         <div class="text-[11px] text-gray-400">
-                            2026-11-12 14:22 | Variação: Preto com Rosa, Bivolt (110V/220V)
+                            2026-11-18 14:22 | Variação: 110V
                         </div>
                         <p class="text-xs sm:text-sm text-gray-800 leading-relaxed pt-1">
-                            Meninas podem comprar sem medo!! Meu cabelo tem progressiva na raiz e ondas nas pontas, em literalmente 8 minutos ele ficou parecendo que saí do salão. Esquenta super bem, não puxa o fio e chegou em 3 dias aqui em MG com frete grátis!
+                            Amei a escova Átomo MO-F5! Chegou super rápido de São Paulo e muito bem embalada. Esquenta bem, seca e alisa o cabelo sem deixar frizz e o cabo giratório facilita demais. Pelo valor no Pix com cupom valeu muito a pena!
                         </p>
-                        <!-- Fotos da Compradora -->
                         <div class="flex gap-2 pt-2">
-                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=200&q=75" alt="Foto cliente 1" class="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded border border-gray-200">
-                            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=200&q=75" alt="Foto cliente 2" class="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded border border-gray-200">
+                            <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" title="Ver na Shopee">
+                                <img src="https://down-br.img.susercontent.com/file/sg-11134201-825ab-muacxcrf0f7lb6.webp" onerror="this.src='https://placehold.co/200x200/18181B/F59E0B?text=Foto+1'" alt="Foto do produto" class="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded border border-gray-200 hover:opacity-90">
+                            </a>
+                            <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" title="Ver na Shopee">
+                                <img src="https://down-br.img.susercontent.com/file/sg-11134201-8258i-muacxbidvegyf2.webp" onerror="this.src='https://placehold.co/200x200/18181B/F59E0B?text=Foto+2'" alt="Foto das cerdas" class="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded border border-gray-200 hover:opacity-90">
+                            </a>
                         </div>
                         <div class="pt-1 flex items-center gap-1 text-xs text-gray-400">
                             <i data-lucide="thumbs-up" class="w-3.5 h-3.5"></i>
-                            <span>Útil (142)</span>
+                            <span>Útil (31)</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- Avaliação 2 -->
-                <article class="review-item py-4 flex gap-3 sm:gap-4" data-category="5 bivolt">
+                <article class="review-item py-4 flex gap-3 sm:gap-4" data-category="5 media">
                     <div class="w-10 h-10 rounded-full bg-orange-100 text-shopee-orange font-bold flex items-center justify-center shrink-0 text-sm">
                         C
                     </div>
                     <div class="flex-1 space-y-1.5">
-                        <div class="text-xs font-medium text-gray-800">c***s <span class="text-gray-400 font-normal ml-1">• Compradora Verificada</span></div>
+                        <div class="text-xs font-medium text-gray-800">c***r <span class="text-gray-400 font-normal ml-1">• Compradora Verificada</span></div>
                         <div class="flex items-center text-shopee-orange">
                             <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
                             <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
@@ -592,25 +695,30 @@
                             <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
                         </div>
                         <div class="text-[11px] text-gray-400">
-                            2026-11-18 09:45 | Variação: Preto com Dourado, Bivolt (110V/220V)
+                            2026-11-20 09:47 | Variação: 220V
                         </div>
                         <p class="text-xs sm:text-sm text-gray-800 leading-relaxed pt-1">
-                            Comprei pra usar depois da academia antes de ir pro escritório e salvou minha vida! Antes eu chegava com o cabelo preso todo dia, agora seco e modelo as pontas rapidinho. Super leve e o cabo giratório ajuda muito. Melhor compra do ano na Shopee.
+                            Excelente custo-benefício! Tenho cabelo volumoso e consegui secar e modelar as pontas em 15 minutos antes de ir trabalhar. Muito leve na mão e não puxa os fios. Loja Espaço Futuro super atenciosa.
                         </p>
+                        <div class="flex gap-2 pt-2">
+                            <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" title="Ver na Shopee">
+                                <img src="https://down-br.img.susercontent.com/file/sg-11134201-8258n-muacxbm1u0p22e.webp" onerror="this.src='https://placehold.co/200x200/18181B/F59E0B?text=Foto+3'" alt="Resultado no cabelo" class="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded border border-gray-200 hover:opacity-90">
+                            </a>
+                        </div>
                         <div class="pt-1 flex items-center gap-1 text-xs text-gray-400">
                             <i data-lucide="thumbs-up" class="w-3.5 h-3.5"></i>
-                            <span>Útil (89)</span>
+                            <span>Útil (24)</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- Avaliação 3 -->
-                <article class="review-item py-4 flex gap-3 sm:gap-4" data-category="5 media">
-                    <div class="w-10 h-10 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center shrink-0 text-sm">
+                <article class="review-item py-4 flex gap-3 sm:gap-4" data-category="5">
+                    <div class="w-10 h-10 rounded-full bg-teal-100 text-teal-800 font-bold flex items-center justify-center shrink-0 text-sm">
                         J
                     </div>
                     <div class="flex-1 space-y-1.5">
-                        <div class="text-xs font-medium text-gray-800">j***8 <span class="text-gray-400 font-normal ml-1">• Compradora Verificada</span></div>
+                        <div class="text-xs font-medium text-gray-800">j***s <span class="text-gray-400 font-normal ml-1">• Compradora Verificada</span></div>
                         <div class="flex items-center text-shopee-orange">
                             <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
                             <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
@@ -619,203 +727,152 @@
                             <i data-lucide="star" class="w-3.5 h-3.5 fill-shopee-orange"></i>
                         </div>
                         <div class="text-[11px] text-gray-400">
-                            2026-11-20 19:10 | Variação: Preto com Rosa, 220V
+                            2026-11-22 18:15 | Variação: 110V
                         </div>
                         <p class="text-xs sm:text-sm text-gray-800 leading-relaxed pt-1">
-                            Veio muito bem embalada na caixa original com manual em português. Eu já tive outra marca famosa que custou o triplo e essa aqui dá de 10 a 0 no brilho que deixa no cabelo! Zero frizz mesmo em dia úmido.
+                            Produto idêntico ao anúncio! Plugue padrão brasileiro certinho, acabamento preto com dourado muito bonito e entrega antes do prazo previsto. Compraria novamente com certeza.
                         </p>
-                        <div class="flex gap-2 pt-2">
-                            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=200&q=75" alt="Foto cliente 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded border border-gray-200">
-                        </div>
                         <div class="pt-1 flex items-center gap-1 text-xs text-gray-400">
                             <i data-lucide="thumbs-up" class="w-3.5 h-3.5"></i>
-                            <span>Útil (64)</span>
+                            <span>Útil (16)</span>
                         </div>
                     </div>
                 </article>
-
             </div>
         </section>
 
-        <!-- 6. PERGUNTAS FREQUENTES (FAQ EM ACORDEÃO INTERATIVO) -->
-        <section class="bg-white rounded-md shadow-sm p-4 sm:p-6">
-            <h2 class="text-base sm:text-lg font-extrabold text-gray-900 mb-4 flex items-center gap-2">
-                <i data-lucide="help-circle" class="w-5 h-5 text-shopee-orange"></i>
-                <span>Perguntas Frequentes (Dúvidas antes de comprar)</span>
-            </h2>
-
-            <div class="space-y-2.5" id="faq-accordion">
-                <!-- Pergunta 1 -->
-                <div class="border border-gray-200 rounded-md overflow-hidden">
-                    <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-4 text-left bg-[#FAFAFA] hover:bg-gray-100 transition font-semibold text-xs sm:text-sm text-gray-900">
-                        <span>1. Serve para cabelo cacheado, ondulado ou com química?</span>
-                        <i data-lucide="chevron-down" class="w-4 h-4 text-gray-500 transition-transform duration-200"></i>
-                    </button>
-                    <div class="faq-content hidden p-4 bg-white text-xs sm:text-sm text-gray-600 border-t border-gray-100 leading-relaxed">
-                        Sim! A escova possui 3 ajustes de temperatura (Ar Frio/Morno para modelar e finalizar, Médio para fios finos/sensíveis e Alto para cabelos grossos, ondulados ou cacheados) e revestimento cerâmico que protege fios com progressiva, tintura ou descoloração.
-                    </div>
-                </div>
-
-                <!-- Pergunta 2 -->
-                <div class="border border-gray-200 rounded-md overflow-hidden">
-                    <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-4 text-left bg-[#FAFAFA] hover:bg-gray-100 transition font-semibold text-xs sm:text-sm text-gray-900">
-                        <span>2. Qual voltagem devo escolher? Posso usar no cabelo molhado?</span>
-                        <i data-lucide="chevron-down" class="w-4 h-4 text-gray-500 transition-transform duration-200"></i>
-                    </button>
-                    <div class="faq-content hidden p-4 bg-white text-xs sm:text-sm text-gray-600 border-t border-gray-100 leading-relaxed">
-                        Você pode escolher entre as versões 110V, 220V ou a opção <strong>Bivolt</strong> (ideal para levar em viagens sem se preocupar com a tomada). Para melhor resultado e durabilidade, retire o excesso de água com a toalha deixando os fios úmidos antes de escovar.
-                    </div>
-                </div>
-
-                <!-- Pergunta 3 -->
-                <div class="border border-gray-200 rounded-md overflow-hidden">
-                    <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-4 text-left bg-[#FAFAFA] hover:bg-gray-100 transition font-semibold text-xs sm:text-sm text-gray-900">
-                        <span>3. Como funciona o Frete Grátis e o prazo de entrega?</span>
-                        <i data-lucide="chevron-down" class="w-4 h-4 text-gray-500 transition-transform duration-200"></i>
-                    </button>
-                    <div class="faq-content hidden p-4 bg-white text-xs sm:text-sm text-gray-600 border-t border-gray-100 leading-relaxed">
-                        Ao clicar no botão de compra, você será direcionada para o anúncio oficial dentro da Shopee, onde poderá aplicar seu Cupom de Frete Grátis no carrinho. O envio é feito diretamente do estoque no Brasil com código de rastreio em tempo real.
-                    </div>
-                </div>
-
-                <!-- Pergunta 4 -->
-                <div class="border border-gray-200 rounded-md overflow-hidden">
-                    <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-4 text-left bg-[#FAFAFA] hover:bg-gray-100 transition font-semibold text-xs sm:text-sm text-gray-900">
-                        <span>4. E se eu não gostar ou tiver algum problema com o produto?</span>
-                        <i data-lucide="chevron-down" class="w-4 h-4 text-gray-500 transition-transform duration-200"></i>
-                    </button>
-                    <div class="faq-content hidden p-4 bg-white text-xs sm:text-sm text-gray-600 border-t border-gray-100 leading-relaxed">
-                        Sua compra conta com a <strong>Garantia Shopee</strong>: o pagamento só é liberado ao vendedor depois que você recebe o produto em casa e confirma que está tudo certo. Você também tem até 7 dias após o recebimento para devolução gratuita se precisar.
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <!-- 7. RODAPÉ PROFISSIONAL COM AVISO DE TRANSPARÊNCIA DE AFILIADO -->
+    <!-- ===================================================================== -->
+    <!-- 7. RODAPÉ PROFISSIONAL                                                -->
+    <!-- ===================================================================== -->
     <footer class="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-gray-200 text-center text-xs text-gray-500 space-y-2">
-        <div class="flex items-center justify-center gap-4 font-medium text-gray-600">
-            <span>Compra Segura</span>
-            <span>•</span>
+        <div class="flex flex-wrap items-center justify-center gap-4 font-medium text-gray-600">
             <span>Garantia Shopee</span>
             <span>•</span>
-            <span>Envio Nacional</span>
+            <span>Loja Espaço Futuro</span>
+            <span>•</span>
+            <span>Envio de São Paulo, SP</span>
+            <span>•</span>
+            <span>Frete Grátis com Cupom</span>
         </div>
         <p class="max-w-2xl mx-auto leading-relaxed">
-            <strong>Aviso de Transparência:</strong> Esta página é uma vitrine independente de recomendações e ofertas selecionadas. Ao clicar nos botões de compra, você será redirecionado(a) para a plataforma oficial da Shopee para concluir seu pedido com total segurança. Como Afiliado Shopee, podemos receber uma pequena comissão sem nenhum custo adicional para você.
-        </p>
-        <p class="text-[11px] text-gray-400">
-            © 2026 Achadinhos Beleza • Todos os direitos reservados. Os preços e estoques promocionais estão sujeitos à disponibilidade na plataforma.
+            <strong>Aviso de Transparência:</strong> Esta página exibe uma oferta selecionada da Shopee Brasil. Ao clicar nas fotos ou botões de compra, você será redirecionado(a) com segurança para o anúncio oficial na Shopee para concluir seu pedido.
         </p>
     </footer>
 
-    <!-- BARRA FLUTUANTE DE COMPRA RÁPIDA (MOBILE & DESKTOP) -->
-    <div class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-[0_-4px_12px_rgba(0,0,0,0.08)] px-3 py-2.5">
-        <div class="max-w-6xl mx-auto flex items-center justify-between gap-3">
-            <div class="flex items-center gap-2.5">
-                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=120&q=75" alt="Miniatura produto" class="w-10 h-10 rounded object-cover border border-gray-200 hidden sm:block">
-                <div>
-                    <div class="flex items-center gap-1.5">
-                        <span class="text-xs text-gray-400 line-through">R$ 189,90</span>
-                        <span class="text-base sm:text-lg font-extrabold text-shopee-orange">R$ 89,90</span>
-                    </div>
-                    <span class="text-[11px] text-shopee-teal font-semibold block leading-none">
-                        Frete Grátis + 53% OFF Hoje
-                    </span>
-                </div>
-            </div>
-
-            <a href="#LINK_AFILIADO_SHOPEE" onclick="goToAffiliate(event)" class="bg-shopee-orange hover:bg-shopee-orangeHover text-white font-bold text-xs sm:text-sm px-5 sm:px-8 py-3 rounded shadow flex items-center gap-2 transition shrink-0">
-                <i data-lucide="shopping-bag" class="w-4 h-4"></i>
-                <span>COMPRAR NA SHOPEE</span>
-            </a>
-        </div>
+    <!-- ===================================================================== -->
+    <!-- 8. BARRA FIXA INFERIOR MOBILE (CHAT + CARRINHO + COMPRE AGORA)        -->
+    <!-- ===================================================================== -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t border-gray-200 shadow-[0_-4px_12px_rgba(0,0,0,0.08)] flex items-stretch h-14">
+        <!-- Botão Chat -->
+        <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="w-16 flex flex-col items-center justify-center text-shopee-teal border-r border-gray-200 hover:bg-gray-50 transition">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span class="text-[10px] text-gray-600 mt-0.5">Chat</span>
+        </a>
+        <!-- Botão Carrinho -->
+        <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="w-16 flex flex-col items-center justify-center text-shopee-teal hover:bg-gray-50 transition">
+            <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+            <span class="text-[10px] text-gray-600 mt-0.5">Carrinho</span>
+        </a>
+        <!-- Botão Principal Compre Agora -->
+        <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="flex-1 bg-shopee-orange hover:bg-shopee-orangeHover text-white font-extrabold text-sm flex flex-col items-center justify-center leading-tight transition">
+            <span>Compre Agora</span>
+            <span class="text-xs font-bold text-yellow-100">R$ 84,64</span>
+        </a>
     </div>
 
-    <!-- MODAL DE REDIRECIONAMENTO / NOTIFICAÇÃO (Sem uso de alert()) -->
-    <div id="redirect-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-md w-full p-6 text-center shadow-2xl space-y-4">
-            <div class="w-14 h-14 rounded-full bg-shopee-orangeLight text-shopee-orange flex items-center justify-center mx-auto">
-                <i data-lucide="shopping-bag" class="w-7 h-7 animate-bounce"></i>
-            </div>
-            <h3 class="text-lg font-extrabold text-gray-900">Ativando Cupom de 53% OFF...</h3>
-            <p class="text-xs sm:text-sm text-gray-600">
-                Variação selecionada: <strong id="modal-variant-summary" class="text-gray-900">Preto com Rosa • Bivolt</strong>.<br>
-                Você está sendo levada para o anúncio oficial na Shopee!
-            </p>
-            <div class="bg-amber-50 border border-amber-200 rounded p-3 text-left text-xs text-amber-900">
-                <strong>Nota para o dono da página:</strong> Você ainda não substituiu o link padrão. Edite a variável <code class="font-mono bg-amber-100 px-1">LINK_AFILIADO_SHOPEE</code> no código HTML ou cole seu link na barra superior.
-            </div>
-            <div class="flex gap-2 justify-center pt-2">
-                <button onclick="closeRedirectModal()" class="px-4 py-2 rounded border border-gray-300 text-xs sm:text-sm font-semibold text-gray-700 hover:bg-gray-50">
-                    Voltar à página
+    <!-- ===================================================================== -->
+    <!-- 9. MODAL INTERATIVO: OPÇÕES DE PARCELAMENTO                           -->
+    <!-- ===================================================================== -->
+    <div id="installments-modal" class="fixed inset-0 z-50 hidden bg-black/50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-sm max-w-md w-full p-5 shadow-xl space-y-4">
+            <div class="flex items-center justify-between border-b border-gray-100 pb-3">
+                <h3 class="font-bold text-gray-900 text-base">Opções de Parcelamento no Cartão</h3>
+                <button type="button" onclick="closeInstallmentsModal()" class="text-gray-400 hover:text-gray-700 p-1">
+                    <i data-lucide="x" class="w-5 h-5"></i>
                 </button>
-                <a href="https://shopee.com.br" target="_blank" rel="noopener noreferrer" class="px-5 py-2 rounded bg-shopee-orange text-white text-xs sm:text-sm font-bold hover:bg-shopee-orangeHover">
-                    Abrir Shopee Agora
-                </a>
+            </div>
+            <div class="divide-y divide-gray-100 text-xs sm:text-sm max-h-64 overflow-y-auto">
+                <div class="py-2 flex justify-between"><span>1x sem juros</span><span class="font-semibold">R$ 98,99</span></div>
+                <div class="py-2 flex justify-between"><span>2x sem juros</span><span class="font-semibold">R$ 49,50</span></div>
+                <div class="py-2 flex justify-between"><span>3x sem juros</span><span class="font-semibold">R$ 33,00</span></div>
+                <div class="py-2 flex justify-between"><span>6x sem juros</span><span class="font-semibold">R$ 16,50</span></div>
+                <div class="py-2 flex justify-between text-shopee-orange font-semibold"><span>12x no cartão</span><span>12x R$ 8,64</span></div>
+            </div>
+            <div class="pt-2 flex justify-end gap-2">
+                <button type="button" onclick="closeInstallmentsModal()" class="px-4 py-2 text-xs font-semibold text-gray-600 border border-gray-300 rounded-sm hover:bg-gray-50">Fechar</button>
+                <a href="https://s.shopee.com.br/7Kym50jcZg" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-xs font-bold text-white bg-shopee-orange hover:bg-shopee-orangeHover rounded-sm">Ir para Shopee</a>
             </div>
         </div>
     </div>
 
-    <!-- TOAST DE MENSAGEM RÁPIDA -->
+    <!-- TOAST DE CÓPIA DE LINK -->
     <div id="toast-notification" class="fixed top-20 right-4 z-50 hidden bg-gray-900 text-white text-xs font-medium px-4 py-2.5 rounded shadow-lg">
-        Link copiado com sucesso!
+        Link oficial da oferta copiado!
     </div>
 
-    <!-- SCRIPTS DE INTERATIVIDADE -->
+    <!-- ===================================================================== -->
+    <!-- SCRIPTS DE INTERATIVIDADE                                             -->
+    <!-- ===================================================================== -->
     <script>
-        // =========================================================================
-        // 1. COLE SEU LINK DE AFILIADO DA SHOPEE AQUI DENTRO DAS ASPAS:
-        // Exemplo: let LINK_AFILIADO_SHOPEE = "https://s.shopee.com.br/seuCodigoAqui";
-        // =========================================================================
-        let LINK_AFILIADO_SHOPEE = "#SEU_LINK_DE_AFILIADO_SHOPEE";
+        const LINK_AFILIADO_SHOPEE = "https://s.shopee.com.br/7Kym50jcZg";
 
-        // Inicializa os ícones Lucide
+        // Inicializa ícones Lucide
         lucide.createIcons();
 
-        // Estado das escolhas do usuário
-        let selectedColor = "Preto com Rosa";
-        let selectedVoltage = "Bivolt (110V/220V)";
-        let isFavorited = true;
-
-        // Galeria de imagens do produto
+        // Lista exata das 7 URLs oficiais enviadas
         const productImages = [
             {
-                url: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85",
-                alt: "Escova Secadora Modeladora Profissional"
+                url: "https://down-br.img.susercontent.com/file/sg-11134201-8258d-muacxbv8o4cme2@resize_w450_nl.webp",
+                alt: "Escova Secadora e Alisadora 3 em 1 Profissional 1500W - Foto 1"
             },
             {
-                url: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=85",
-                alt: "Resultado cabelo liso e brilhante"
+                url: "https://down-br.img.susercontent.com/file/sg-11134201-825ab-muacxcrf0f7lb6.webp",
+                alt: "Escova Secadora e Alisadora 3 em 1 Profissional 1500W - Foto 2"
             },
             {
-                url: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=85",
-                alt: "Modelagem rápida no dia a dia"
+                url: "https://down-br.img.susercontent.com/file/sg-11134201-8258n-muacxbm1u0p22e.webp",
+                alt: "Escova Secadora e Alisadora 3 em 1 Profissional 1500W - Foto 3"
             },
             {
-                url: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=85",
-                alt: "Acabamento de salão em casa"
+                url: "https://down-br.img.susercontent.com/file/sg-11134201-8258p-muacxc3286br51.webp",
+                alt: "Escova Secadora e Alisadora 3 em 1 Profissional 1500W - Foto 4"
             },
             {
-                url: "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=800&q=85",
-                alt: "Proteção térmica e brilho intenso"
+                url: "https://down-br.img.susercontent.com/file/sg-11134201-8258i-muacxbidvegyf2.webp",
+                alt: "Escova Secadora e Alisadora 3 em 1 Profissional 1500W - Foto 5"
+            },
+            {
+                url: "https://down-br.img.susercontent.com/file/sg-11134201-8258s-muacxcjtlxxg9e.webp",
+                alt: "Escova Secadora e Alisadora 3 em 1 Profissional 1500W - Foto 6"
+            },
+            {
+                url: "https://down-br.img.susercontent.com/file/sg-11134201-8258f-muacxbsw8fey7c.webp",
+                alt: "Escova Secadora e Alisadora 3 em 1 Profissional 1500W - Foto 7"
             }
         ];
-        let currentImageIndex = 0;
 
-        // Renderiza miniaturas
+        let currentImageIndex = 0;
+        let quantity = 1;
+        let isFavorited = true;
+
+        // Renderiza miniaturas clicáveis (cada uma aponta para o link de afiliado e atualiza a foto principal no hover)
         function renderThumbnails() {
             const container = document.getElementById('thumbnails-container');
             container.innerHTML = '';
             productImages.forEach((img, index) => {
-                const btn = document.createElement('button');
-                btn.type = 'button';
-                btn.onclick = () => setMainImage(index);
-                btn.className = `aspect-square rounded overflow-hidden border-2 transition ${
-                    index === currentImageIndex ? 'border-shopee-orange ring-1 ring-shopee-orange' : 'border-gray-200 opacity-75 hover:opacity-100'
+                const link = document.createElement('a');
+                link.href = LINK_AFILIADO_SHOPEE;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.title = "Clique para ver na Shopee";
+                link.onmouseenter = () => setMainImage(index);
+                link.className = `w-16 h-16 shrink-0 rounded-sm overflow-hidden border-2 block bg-white transition ${
+                    index === currentImageIndex ? 'border-shopee-orange ring-1 ring-shopee-orange' : 'border-gray-200 opacity-85 hover:opacity-100'
                 }`;
-                btn.innerHTML = `<img src="${img.url}" onerror="this.src='https://placehold.co/200x200/FFF5F1/EE4D2D?text=Foto+${index+1}'" alt="${img.alt}" class="w-full h-full object-cover">`;
-                container.appendChild(btn);
+                link.innerHTML = `<img src="${img.url}" onerror="this.src='https://placehold.co/150x150/18181B/F59E0B?text=Foto+${index+1}'" alt="${img.alt}" class="w-full h-full object-cover">`;
+                container.appendChild(link);
             });
         }
 
@@ -827,30 +884,20 @@
             renderThumbnails();
         }
 
-        function nextImage() {
+        function nextImage(e) {
+            if (e) e.preventDefault();
             currentImageIndex = (currentImageIndex + 1) % productImages.length;
             setMainImage(currentImageIndex);
         }
 
-        function prevImage() {
+        function prevImage(e) {
+            if (e) e.preventDefault();
             currentImageIndex = (currentImageIndex - 1 + productImages.length) % productImages.length;
             setMainImage(currentImageIndex);
         }
 
-        // Seleção de Cor
-        function selectColor(button, colorName) {
-            selectedColor = colorName;
-            document.querySelectorAll('.variant-color-btn').forEach(btn => {
-                btn.classList.remove('border-2', 'border-shopee-orange', 'bg-shopee-orangeLight', 'text-shopee-orange', 'font-semibold');
-                btn.classList.add('border', 'border-gray-300', 'bg-white', 'text-gray-700', 'font-medium');
-            });
-            button.classList.remove('border', 'border-gray-300', 'bg-white', 'text-gray-700', 'font-medium');
-            button.classList.add('border-2', 'border-shopee-orange', 'bg-shopee-orangeLight', 'text-shopee-orange', 'font-semibold');
-        }
-
-        // Seleção de Voltagem
+        // Seleção de Voltagem (110V / 220V)
         function selectVoltage(button, voltageName) {
-            selectedVoltage = voltageName;
             document.querySelectorAll('.variant-volt-btn').forEach(btn => {
                 btn.classList.remove('border-2', 'border-shopee-orange', 'bg-shopee-orangeLight', 'text-shopee-orange', 'font-semibold');
                 btn.classList.add('border', 'border-gray-300', 'bg-white', 'text-gray-700', 'font-medium');
@@ -859,17 +906,23 @@
             button.classList.add('border-2', 'border-shopee-orange', 'bg-shopee-orangeLight', 'text-shopee-orange', 'font-semibold');
         }
 
-        // Favoritar produto
+        // Controle de Quantidade
+        function changeQty(delta) {
+            quantity = Math.max(1, Math.min(10, quantity + delta));
+            document.getElementById('qty-value').textContent = quantity;
+        }
+
+        // Favoritar
         function toggleFavorite() {
             isFavorited = !isFavorited;
             const icon = document.getElementById('fav-icon');
             const count = document.getElementById('fav-count');
             if (isFavorited) {
                 icon.classList.add('fill-shopee-orange');
-                count.textContent = '18,7 mil';
+                count.textContent = '1,4 mil';
             } else {
                 icon.classList.remove('fill-shopee-orange');
-                count.textContent = '18,6 mil';
+                count.textContent = '1,3 mil';
             }
         }
 
@@ -892,25 +945,18 @@
             });
         }
 
-        // Acordeão FAQ
-        function toggleFaq(button) {
-            const content = button.nextElementSibling;
-            const icon = button.querySelector('svg');
-            const isHidden = content.classList.contains('hidden');
-
-            document.querySelectorAll('.faq-content').forEach(el => el.classList.add('hidden'));
-            document.querySelectorAll('#faq-accordion svg').forEach(svg => svg.classList.remove('rotate-180'));
-
-            if (isHidden) {
-                content.classList.remove('hidden');
-                if (icon) icon.classList.add('rotate-180');
-            }
+        // Modal de Parcelamento
+        function openInstallmentsModal() {
+            document.getElementById('installments-modal').classList.remove('hidden');
+        }
+        function closeInstallmentsModal() {
+            document.getElementById('installments-modal').classList.add('hidden');
         }
 
-        // Contagem regressiva da Oferta Relâmpago (01h 42m 19s)
-        let totalSeconds = (1 * 3600) + (42 * 60) + 19;
+        // Cronômetro regressivo
+        let totalSeconds = (1 * 3600) + (48 * 60) + 35;
         function updateCountdown() {
-            if (totalSeconds <= 0) totalSeconds = 5400; // Reinicia ciclo se zerar
+            if (totalSeconds <= 0) totalSeconds = 5400;
             totalSeconds--;
 
             const hrs = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
@@ -932,51 +978,19 @@
         }
         setInterval(updateCountdown, 1000);
 
-        // Atualizar link via painel superior
-        function updateAffiliateLinkFromBar() {
-            const input = document.getElementById('custom-affiliate-input').value.trim();
-            if (input) {
-                LINK_AFILIADO_SHOPEE = input;
-                showToast("Link de afiliado aplicado com sucesso!");
-            }
-        }
-
-        // Ação principal ao clicar nos botões de compra
-        function goToAffiliate(event) {
-            event.preventDefault();
-            // Se o usuário já configurou um link real (http/https), redireciona direto
-            if (LINK_AFILIADO_SHOPEE && LINK_AFILIADO_SHOPEE.startsWith('http')) {
-                window.open(LINK_AFILIADO_SHOPEE, '_blank', 'noopener,noreferrer');
-            } else {
-                // Caso ainda esteja com o placeholder, exibe o modal amigável de aviso
-                document.getElementById('modal-variant-summary').textContent = `${selectedColor} • ${selectedVoltage}`;
-                document.getElementById('redirect-modal').classList.remove('hidden');
-            }
-        }
-
-        function closeRedirectModal() {
-            document.getElementById('redirect-modal').classList.add('hidden');
-        }
-
-        // Copiar link sem alert()
+        // Copiar link oficial
         function copyPageLink() {
             const tempInput = document.createElement('input');
-            tempInput.value = window.location.href;
+            tempInput.value = LINK_AFILIADO_SHOPEE;
             document.body.appendChild(tempInput);
             tempInput.select();
             document.execCommand('copy');
             document.body.removeChild(tempInput);
-            showToast("Link da oferta copiado para compartilhar!");
-        }
-
-        function showToast(msg) {
             const toast = document.getElementById('toast-notification');
-            toast.textContent = msg;
             toast.classList.remove('hidden');
             setTimeout(() => toast.classList.add('hidden'), 3000);
         }
 
-        // Inicializar galeria ao carregar
         window.onload = function() {
             renderThumbnails();
         };
